@@ -15,13 +15,14 @@ Une application de gestion de tâches desktop moderne basée sur la méthodologi
 
 ## 🎯 Aperçu
 
-**Kanban Supreme** est une application desktop intuitive permettant de gérer des projets et des tâches en utilisant le système Kanban. Elle permet aux utilisateurs d'organiser leurs travaux en colonnes (À faire, En cours, Terminé) pour une meilleure visualisation du flux de travail.
+**Kanban Supreme** est une application desktop intuitive permettant de gérer des projets et des tâches en utilisant le système Kanban. Elle permet aux utilisateurs d'organiser leurs travaux en colonnes et de gérer facilement le flux de travail avec deux modes fonctionnels distincts.
 
 ### Caractéristiques principales
 
 - Interface graphique moderne et conviviale
 - Gestion visuelle des tâches par glisser-déposer
 - Organisation des tâches en tableaux Kanban
+- Deux modes de fonctionnement : **Mode par défaut** et **Mode de personnalisation**
 - Suppression et création facile de tâches
 - Icônes intuitives pour les actions
 - Persistance des données
@@ -45,6 +46,24 @@ Une application de gestion de tâches desktop moderne basée sur la méthodologi
 - Affichage des images d'icônes (PNG)
 - Interface responsive et intuitive
 - Organisation visuelle des tâches par statut
+
+### Modes de fonctionnement
+
+#### Mode par défaut
+- Affichage standard de l'application Kanban
+- Gestion simple des tâches
+- Interface simplifiée
+
+#### Mode de personnalisation
+- Permet de configurer et adapter l'application
+- Personnalisation des paramètres et de l'interface
+- Options avancées pour l'utilisateur
+
+### Glisser-déposer
+
+- ✅ **Drag and Drop** : Déplacement intuitif des tâches entre les colonnes
+- Réorganisation fluide du flux de travail
+- Interface responsive aux interactions utilisateur
 
 ## 🏗️ Architecture
 
@@ -70,11 +89,13 @@ Kanban_Supreme/
 - Gère la fenêtre principale de l'application
 - Orchestration des interactions utilisateur
 - Gestion du tableau Kanban
+- Gestion des deux modes (par défaut et personnalisation)
 
 #### Dialog
 - Dialogues personnalisés pour les interactions utilisateur
 - Formulaires de saisie
 - Messages de confirmation
+- Interface de personnalisation
 
 #### Interface UI
 - Fichiers `.ui` (Qt Designer XML)
@@ -146,6 +167,19 @@ Kanban_Supreme.exe
 
 1. Lancez l'application `Kanban_Supreme`
 2. L'interface affiche un tableau avec 3 colonnes principales
+3. Vous pouvez basculer entre le mode par défaut et le mode de personnalisation
+
+### Mode par défaut
+
+- Gestion standard des tâches
+- Déplacement des tâches par glisser-déposer
+- Accès aux fonctionnalités principales
+
+### Mode de personnalisation
+
+- Accédez aux paramètres de personnalisation
+- Configurez l'interface selon vos préférences
+- Adaptez l'application à vos besoins
 
 ### Créer une tâche
 
@@ -171,6 +205,11 @@ Kanban_Supreme.exe
   - **À faire** : Nouvelles tâches créées
   - **En cours** : Tâches en cours de réalisation
   - **Terminé** : Tâches complétées
+
+- **Glisser-déposer** :
+  - Cliquez et maintenez une tâche
+  - Déplacez-la vers la colonne souhaitée
+  - Relâchez pour valider le déplacement
 
 ## 📁 Structure du projet
 
@@ -304,12 +343,15 @@ Pour toute question ou problème :
 - ✅ Interface Kanban avec 3 colonnes
 - ✅ Création de tâches
 - ✅ Suppression de tâches
+- ✅ Modification de tâches
+- ✅ Glisser-déposer des tâches
 - ✅ Icônes intuitives
 - ✅ Interface graphique Qt
+- ✅ Mode par défaut
+- ✅ Mode de personnalisation
 
 ### Prochaines améliorations possibles
 
-- [ ] Glisser-déposer des tâches
 - [ ] Persévérance automatique en base de données
 - [ ] Système de priorités
 - [ ] Filtrage et recherche
@@ -318,4 +360,4 @@ Pour toute question ou problème :
 
 ---
 
-**Dernier update** : Juin 2026
+**Dernier update** : Septembre 2026
